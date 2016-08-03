@@ -17,4 +17,4 @@ zip -P <password> ${COUNTRY_HOME}/${YEAR}/${MONTH}/${COUNTRY}_EXPORTS_${DATE}.zi
 
 #copy file to crashplan
 FILE2SEND=$(cd ${COUNTRY_HOME}/${YEAR}/${MONTH} && find -name ${COUNTRY}_EXPORTS_\*.zip | sort -n | tail -1 | cut -sd / -f 2-)
-scp ${COUNTRY_HOME}/${YEAR}/${MONTH}/${FILE2SEND} root@<>.<>.org:${REMOTE_HOME}/${YEAR}/${MONTH}
+scp ${COUNTRY_HOME}/${YEAR}/${MONTH}/${FILE2SEND} <username>@<>.<>.org:${REMOTE_HOME}/${YEAR}/${MONTH}
